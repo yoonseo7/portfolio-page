@@ -1,0 +1,179 @@
+body{
+    background-size: 100vw 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin:0;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    align-items: center;
+    background-color: #F9FDFF;
+    flex-direction: column;
+}
+
+div.con
+{
+    height: 10%;
+    width:100%;
+}
+
+header
+{
+    margin-left: 2.0%;
+    margin-bottom: 20px;
+    /* margin-top: 0.9%; */
+    font-family: 'Kalam', cursive;
+    /* width:30%;
+    height: 100%; */
+    height: 30%;
+    text-shadow: rgba(0, 0, 0, 0.28) 0 3px 7px;
+    font-size: 3.5vw;
+    letter-spacing: 4px;
+}
+
+div.box {
+    margin-left:1.3%;
+    margin-top: -5px;
+    width:12.5vw;
+    height: 2.1vh;
+    background-color: #5D67F6;
+    box-shadow: rgba(0, 0, 0, 0.28) 2px 1px 4px;
+}
+
+div.main-con
+{
+    width:85%;
+    height:82%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-shadow: rgba(0, 0, 0, 0.28) 0 3px 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    vertical-align:center;
+    justify-content: space-between;
+}
+
+div.music
+{
+    width:30%;
+    height: 90%;
+    background-color:#e8faf3;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+    transition:0.3s;
+}
+.music img {
+    opacity: 0;
+    width:180px;
+    position: absolute;
+    top: 480px;
+    left: 215px;
+    transition:1.2s;
+    transition-delay:0.0s;
+}
+.mu
+{
+    position: absolute;
+    top: 340px;
+    left: 245px;
+    transition:1.3s;
+}
+.music:hover 
+{
+    background-color:#bcf5dd;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.music:hover img {
+    opacity: 1;
+    top:330px;
+    transform: rotate(120deg);
+}
+.music:hover .mu
+{
+    top: 220px;
+}
+
+div.drama
+{
+    width:30%;
+    height: 90%;
+    background-color:#ebecfc;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+    transition:0.3s;
+}
+.drama img {
+    opacity: 0;
+    width:180px;
+    position: absolute;
+    top: 480px;
+    left: 660px;
+    transition:1.2s;
+    transform: rotate(90deg);
+}
+.dr
+{
+    position: absolute;
+    top: 340px;
+    left: 680px;
+    transition:1.3s;
+}
+.drama:hover
+{
+    background-color:#c3c7fa;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.drama:hover img {
+    opacity: 1;
+    top:330px;
+    transform: rotate(0deg);
+}
+.drama:hover .dr
+{
+    top: 220px;
+}
+
+div.movie
+{   
+    width:30%;
+    height: 90%;
+    background-color:#fae6ea;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+    transition:0.3s;
+}
+.movie img {
+    opacity: 0;
+    width:180px;
+    position: absolute;
+    top: 480px;
+    left: 1110px;
+    transition:1.2s;
+    transform: rotate(120deg);
+    transition-delay:0.0s;
+}
+.mo
+{
+    position: absolute;
+    top: 340px;
+    left: 1135px;
+    transition:1.3s;
+}
+.movie:hover 
+{
+    background-color:#ffcfd9;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.movie:hover img {
+    opacity: 1;
+    top:330px;
+    transform: rotate(0deg);
+}
+.movie:hover .mo
+{
+    top: 220px;
+}
