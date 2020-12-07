@@ -1,0 +1,138 @@
+body{
+    background-size: 100vw 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin:0;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    align-items: center;
+    background-color: #F9FDFF;
+    flex-direction: column;
+}
+
+div.con
+{
+    height: 15%;
+    width:100%;
+}
+
+header
+{
+    margin-left: 2.0%;
+    /* margin-top: 0.9%; */
+    font-family: 'Kalam', cursive;
+    /* width:30%;
+    height: 100%; */
+    height: 30%;
+    text-shadow: rgba(0, 0, 0, 0.28) 0 3px 7px;
+    font-size: 3.5vw;
+    letter-spacing: 4px;
+}
+
+div.box {
+    margin-left:1.3%;
+    margin-top: 0.8vh;
+    width:13vw;
+    height: 2.5vh;
+    background-color: #FF4068;
+    box-shadow: rgba(0, 0, 0, 0.28) 2px 1px 4px;
+}
+
+div.main-con
+{
+    width:85%;
+    height:82%;
+    font-family: 'Nanum Pen Script';
+    text-shadow: rgba(0, 0, 0, 0.28) 0 1px 2px;
+}
+
+.p2
+{
+    position: absolute;
+    top:100px;
+    left: 100px;
+    width :71px;
+    height: 78px;
+    --wid : 147px;
+    --aft : 170px;
+}
+
+.p2 img.before
+{
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    width:var(--wid);
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 1;
+}
+.p2 img.after
+{        
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+    width:var(--wid);
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.p2-logo
+{
+    z-index: 2; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    width:var(--wid);
+    height: 130px;
+    transition: 0.5s;
+}
+.p2-logo img
+{
+    display: flex;
+    margin-top:15px;
+    height: 70px;
+    transition: 0.5s;
+}
+.p2-name
+{
+    z-index: 4;
+    position: absolute; 
+    width:var(--wid);    
+    text-align: center;
+    margin-top: 7px;
+    font-size: 25px;
+    transition: 0.5s;
+
+}
+.p2:hover img.before
+{
+    opacity: 0;
+    width:var(--aft);
+}
+.p2:hover img.after
+{
+    opacity: 1;   
+    width:var(--aft);
+}
+.p2:hover .p2-name
+{
+    width:var(--aft);    
+    margin-top: 15px;
+    font-size: 40px;
+}
+.p2:hover .p2-logo
+{
+    width:var(--aft);
+    height: 150px;
+}
+.p2:hover .p2-logo img
+{
+    margin-top:20px;
+    height: 85px;
+}

@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoonseo's</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="./main.css">
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Kalam:wght@300;400&display=swap" rel="stylesheet">
   <script type="text/javascript">
   function openPrize(){
   location.href="prize.html";
+  }
+  function openProject(){
+  location.href="project.html";
   }
   </script>
 </head>
@@ -21,7 +24,7 @@
     <div class="menu">
       <div class="menu-box">
         <div class="top">
-          <i class="oval1">
+          <i class="oval1" id="prize" onclick="openProject()">
             <span class="oval-text" style="transform:rotate(-10deg)">Project</span>
           </i>
         </div>
